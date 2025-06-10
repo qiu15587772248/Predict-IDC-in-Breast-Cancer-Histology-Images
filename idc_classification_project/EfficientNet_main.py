@@ -28,7 +28,7 @@ def run_training_pipeline():
 
     # 1. 加载/定义配置
     BATCH_SIZE = 32  
-    patch_size = 224 # EfficientNet输入为224（不同于ResNet，所以这个模型的训练市场大概是ResNet的4到5倍）
+    patch_size = 224 # EfficientNet输入为224
     LEARNING_RATE = getattr(configs, 'LEARNING_RATE', 1e-4)
     NUM_EPOCHS = 1  # 只训练一轮用于测试，真正训练需要运行optimized文件
     WEIGHT_DECAY = getattr(configs, 'WEIGHT_DECAY', 1e-4)
