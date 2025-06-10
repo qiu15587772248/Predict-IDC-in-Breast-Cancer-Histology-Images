@@ -1,0 +1,1 @@
+ python -m idc_classification_project.ReNet_main
